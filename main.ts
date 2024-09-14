@@ -242,7 +242,7 @@ ano: "${item.release_date ? item.release_date.split("-")[0] : "Desconhecido"}"
 gênero:
   - ${item.genre_ids.map((id) => this.getGenreName(id)).join("\n  - ")}
 image: https://image.tmdb.org/t/p/w500${item.poster_path}
-lançado: ${item.release_date ? true : false}
+lançado: ${item.release_date}
 tags:
   - ${type === "movie" ? "filme" : "série"}
 ---
