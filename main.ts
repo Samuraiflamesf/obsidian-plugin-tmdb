@@ -235,8 +235,8 @@ class SearchMovieModal extends Modal {
 		};
 
 		const fileName = `${cleanFileName(item.title || item.name)} (${
-			item.release_date || item.first_air_date || ""
-		})[${item.id}].md`;
+			item.release_date.split("-")[0] || item.first_air_date || "XXXX"
+		}).md`;
 
 
 
