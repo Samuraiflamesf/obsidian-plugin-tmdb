@@ -249,6 +249,7 @@ gênero:
   - ${item.genre_ids.map((id) => this.getGenreName(id)).join("\n  - ")}
 image: https://image.tmdb.org/t/p/w500${item.poster_path}
 lançado: ${item.release_date}
+assistido: false
 tags:
   - ${type === "movie" ? "filme" : "série"}
 ---
