@@ -237,12 +237,12 @@ class SearchMovieModal extends Modal {
 		// Gera o conteúdo da nota com base nos detalhes do filme ou série
 		const fileContent = `---
 titulo: "${item.title || item.name}"
+tipo: ${type === "movie" ? "Filme" : "Série"}
 ano: "${item.release_date ? item.release_date.split("-")[0] : "Desconhecido"}"
 gênero:
   - ${item.genre_ids.map((id) => this.getGenreName(id)).join("\n  - ")}
 image: https://image.tmdb.org/t/p/w500${item.poster_path}
 lançado: ${item.release_date ? true : false}
-
 tags:
   - ${type === "movie" ? "filme" : "série"}
 ---
@@ -289,7 +289,7 @@ ${item.overview || "Nenhuma descrição disponível."}
 			10752: "Guerra",
 			37: "Ocidental",
 		};
-		return genres[id] || "Unknown";
+		return genres[id] || null;
 	}
 
 	onClose() {
