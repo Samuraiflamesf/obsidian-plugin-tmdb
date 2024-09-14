@@ -235,8 +235,8 @@ class SearchMovieModal extends Modal {
 		};
 
 		const fileName = `${cleanFileName(item.title || item.name)} (${
-			item.release_date || item.first_air_date || "Data não disponível"
-		}) [TMDB-${item.id}].md`;
+			item.release_date || item.first_air_date || ""
+		})[${item.id}].md`;
 
 
 
