@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "es6", 
+        "module": "es6", 
+        "moduleResolution": "node", 
+        "outDir": "dist", // Diretório de saída
+        "rootDir": "src", // Diretório raiz do código-fonte
+        "strict": true, 
+        "esModuleInterop": true, 
+        "skipLibCheck": true, 
+        "forceConsistentCasingInFileNames": true 
+    },
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}
