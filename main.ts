@@ -232,7 +232,8 @@ class SearchMovieModal extends Modal {
 	async createNoteForItem(item: any, type: string) {
 		const fileName = `${item.title || item.name} (${
 			item.release_date || item.first_air_date || "Data não disponível"
-		}).md`;
+		}) [TMDB-${item.id}].md`;
+
 
 		// Gera o conteúdo da nota com base nos detalhes do filme ou série
 		const fileContent = `---
