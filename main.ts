@@ -230,9 +230,14 @@ class SearchMovieModal extends Modal {
 
 	// Cria uma nota com as informações do filme selecionado no formato desejado
 	async createNoteForItem(item: any, type: string) {
-		const fileName = `${item.title || item.name} (${
+		const cleanFileName = (str) => {
+			return str.replace(/[\/:*?"<>|]/g, ""); // Remove caracteres inválidos
+		};
+
+		const fileName = `${cleanFileName(item.title || item.name)} (${
 			item.release_date || item.first_air_date || "Data não disponível"
 		}) [TMDB-${item.id}].md`;
+
 
 
 		// Gera o conteúdo da nota com base nos detalhes do filme ou série
