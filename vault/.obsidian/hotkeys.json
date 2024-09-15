@@ -1,0 +1,10 @@
+{
+  "obsidian-plugin-tmdb:search-movie": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "M"
+    }
+  ]
+}

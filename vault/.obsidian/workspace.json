@@ -11,12 +11,8 @@
             "id": "e821593c70b174c5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "BD/Meu Malvado Favorito 4 (2024-06-20).md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "BD/Meu Malvado Favorito 4 (2024-06-20).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "BD/Meu Malvado Favorito 4 (2024-06-20).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +119,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "BD/Meu Malvado Favorito 4 (2024-06-20).md"
+                "file": "BD/Nota (2015).md"
               }
             }
           }
@@ -147,13 +141,19 @@
       "obsidian-plugin-tmdb:TMDB Plugin": false
     }
   },
-  "active": "e821593c70b174c5",
+  "active": "47f6cad7fac9890f",
   "lastOpenFiles": [
-    "BD/Busca (2023-01-20).md",
+    "BD/Nota (2015).md",
+    "BD/Posto de Combate (2020).md",
+    "BD/teste (XXXX).md",
+    "index.md",
+    "BD/Meu Malvado Favorito (2010).md",
+    "Teste.md",
     "BD/Meu Malvado Favorito 4 (2024-06-20).md",
+    "BD/Busca (2023-01-20).md",
+    "BD/Meu Malvado Favorito 4 (2024).md",
     "BD/Rei Arthur (2004-07-07).md",
     "A Incrível História de Adaline (2015-04-16).md",
-    "Teste.md",
     "pluginda/styles.css",
     "pluginda/manifest.json",
     "pluginda/main.ts",

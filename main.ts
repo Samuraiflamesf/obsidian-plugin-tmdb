@@ -235,10 +235,8 @@ class SearchMovieModal extends Modal {
 		};
 
 		const fileName = `${cleanFileName(item.title || item.name)} (${
-			item.release_date.split("-")[0] || item.first_air_date || "XXXX"
+			item.release_date.split("-")[0] || item.first_air_date || ""
 		}).md`;
-
-
 
 		// Gera o conteúdo da nota com base nos detalhes do filme ou série
 		const fileContent = `---
@@ -250,10 +248,10 @@ gênero:
 image: https://image.tmdb.org/t/p/w500${item.poster_path}
 lançado: ${item.release_date}
 assistido: false
+nota:
 tags:
   - ${type === "movie" ? "filme" : "série"}
 ---
-
 # Resumo
 ${item.overview || "Nenhuma descrição disponível."}
 `;
